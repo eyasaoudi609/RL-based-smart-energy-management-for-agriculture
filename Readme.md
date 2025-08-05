@@ -81,13 +81,4 @@ Trained models and logs will be saved under /save_files/ and /logs/.
 
 ### 3. Test the Model
 Evaluation is done over multiple days using:
-
 test_average(path="save_files/MARL_IDR_6")
-
-Key Results
-Metric	Without DR	With DR
-Peak Load (kW)	High	Lower
-Mean Load (kW)	Similar	Balanced
-Incentives Paid	0	Moderate
-PAR (Peak-to-Average Ratio)	High	Reduced
-
