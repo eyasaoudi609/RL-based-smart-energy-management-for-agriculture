@@ -26,13 +26,21 @@ Developed as part of an **end-of-study internship**, this work simulates realist
 
 .
 ├── main.py # Main training and testing logic
+
 ├── agent_customer.py # Customer agent implementation (DQN)
+
 ├── agent_aggregator_dqn.py # Aggregator agent logic
+
 ├── environment.py # Environment simulating the smart grid
+
 ├── params.py # All configurable parameters
+
 ├── data_preprocessing.py # Clean and format consumption data
+
 ├── utils/ # Plotting, metrics, evaluation
+
 ├── save_files/ # Saved trained models
+
 └── logs/ # TensorBoard logs
 
 
