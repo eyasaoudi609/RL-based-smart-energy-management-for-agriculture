@@ -1,0 +1,281 @@
+
+body {
+  background-color: #d3e8c9; /* Set the desired background color for the entire page */
+  margin: 0; /* Remove default margin to prevent spacing around the body */
+  padding: 0; /* Remove default padding to prevent spacing around the body */
+  font-family: Arial, sans-serif; /* Specify your preferred font-family */
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 7.5rem;
+    padding: 2rem 1rem;
+    /* background-color: #f8f9fa; */
+    z-index: 1050;
+    transition: width 0.3s ease-in-out;
+    background-color: #62a484;
+    color: black; /* Text color */
+  }
+
+
+
+  /* when the user hovers on the sidebar, expand it */
+  .sidebar:hover {
+    width: 23.5rem;
+  }
+
+  /* make sure the contents of the navlink don't wrap when navbar collapses */
+  .sidebar .nav-link {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* fix the width of the icons */
+  .sidebar .nav-link i {
+    width: 1rem;
+  }
+
+  /* hide the navlink labels by default */
+  .sidebar .nav-link span {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  /* when the sidebar is hovered, reveal the labels */
+  .sidebar:hover .nav-link span {
+    visibility: visible;
+    opacity: 1;
+    /*color: black; /* Text color */
+  }
+
+  /* container for the sidebar header. make sure the contents don't wrap when
+   * the sidebar is collapsed.
+   */
+  .sidebar-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  /* @font-face {
+    font-family: "garamond";
+    } */
+
+  .nav-link.active{
+    background-color: #0084d6 !important;
+    color: #000000 !important;
+    box-shadow: 0 2px 4px 0 rgba(32, 121, 255, 0.308) !important;
+  }
+
+  .nav-link.active:hover{
+    color: #000000 !important;
+  }
+
+  .nav-link:hover {
+    color:  #0084d6 !important;
+  }
+
+  .image_title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    align-items: center;
+    color: #000000
+  }
+
+  .icon_title {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+  }
+
+  .home_bg {
+    background-color: #62a484;
+    border-radius: 2rem;
+  }
+
+  .about_bg {
+    background-color: #62a484;
+    border-radius: 2rem;
+  }
+
+  .table_bg {
+    background-color: #d3e8c9;
+    border-radius: 2rem;
+    padding: 10px;
+    height: 700px;
+  }
+
+  .home_row {
+    margin-left: 20rem;
+    margin-top: 10rem;
+    color: #000000
+  }
+
+  .about_row {
+    margin-left: 20rem;
+    margin-top: 10rem;
+    color: #000000
+  }
+  .table_row {
+    margin-left: 20rem;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+    color: #d3e8c9
+  }
+
+  .first_text_column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gif_column {
+    display: flex;
+    flex-direction: column;
+  }
+  .gif_image {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    height: 400px;
+    width: 200%;
+  }
+
+  .gif_row {
+    display: flex;
+    flex-direction: row;
+  }
+
+   /**************css style for dashboard page*****************/
+  /* styles.css */
+  .box-container {
+    display: inline-block;
+    white-space: nowrap; /* Prevent boxes from wrapping to the next line */
+  }
+/* Define a CSS class for the result box */
+
+.result-box1 {
+  width: 500px;
+  height: 500px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  margin: 20px auto 20px 300px; /* Adjust margin to move the box to the left */
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: inline-block; 
+}
+.result-box4 {
+  width: 900px;
+  height: 500px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  margin: 20px auto 20px 900px; /* Adjust margin to move the box to the left */
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+  display: inline-block; 
+}
+
+.result-box2 {
+  width: 500px;
+  height: 700px;
+  background-color: #d3e8c9;
+  color: black;
+  padding: 10px;
+  margin: 20px auto 20px 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.result-box3 {
+  width: 900px;
+  height: 700px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+
+.result-box5 {
+  width: 700px;
+  height: 500px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+
+.result-box6 {
+  width: 700px;
+  height: 500px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  margin: 20px auto;
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.result-box7 {
+  width: 700px;
+  height: 550px;
+  background-color: #d3e8c9;
+  color: white;
+  padding: 10px;
+  /* margin: 20px auto; */
+  text-align: left;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+
+
+.custom-dropdown 
+.Select-control {
+  border: 3px solid #62a484;
+
+}
+
+/* Style the dropdown options background color */
+.custom-dropdown .Select-menu-outer {
+  background-color: #62a484; /* Replace with your desired background color */
+}
+
+/* Style the text color of dropdown options */
+.custom-dropdown .Select-option {
+  color: #62a484; /* Replace with your desired text color */
+}
+
+
+.result-box8 {
+  width: 500px;
+  height: 800px;
+  background-color: #d3e8c9;
+  color: black;
+  padding: 10px;
+  margin: 20px auto 20px 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid black;
+}
