@@ -24,7 +24,6 @@ Developed as part of an **end-of-study internship**, this work simulates realist
 
 ##  Project Structure
 
-.
 ├── main.py # Main training and testing logic
 
 ├── agent_customer.py # Customer agent implementation (DQN)
